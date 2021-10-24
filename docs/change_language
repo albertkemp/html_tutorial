@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@700&display=swap" rel="stylesheet"> 
+  <link href="styles/style.css" rel="stylesheet">
+  <link rel="shortcut icon" href="images/html_tutorial_logo.png">
+  <title>Change Language</title>
+</head>
+
+<body>
+    <h1>Change Language</h1>
+    <h2>Change To…</h2>
+    <select>
+        <option>Change Language</option>
+        <option>中文（简体）</option>
+        <option>English (US)</option>
+    </select>
+<button onclick="window.location.href='getting_started_with_the_internet.html'">Change</button> 
+</body>
+</html>
+
