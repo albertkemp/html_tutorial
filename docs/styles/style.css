@@ -205,5 +205,8 @@ a {
   text-decoration: underline;
   text-decoration-color: #3259d8;
 }
+code{
+  background-color: lightgrey;
+}
 
 
