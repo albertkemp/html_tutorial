@@ -158,15 +158,13 @@
           <th>Output</th>
         </tr>
         <tr>
-          <code>
+          <td><code>
             &lt;head&gt;
             &nbsp;&nbsp;&nbsp;&nbsp;
             &lt;title&gt;Page title&lt;/title&gt;
             &lt;/head&gt;
-          </code>
-        </tr>
-        <tr>
-          <img src="">
+          </code></td>
+          <td><img src="images/title.png" height="100px" title="title"></td>
         </tr>
       </table>
       <h3>Body</h3>
@@ -187,7 +185,7 @@
 
 
 
-      <p>Below is an example of a body you can copy</p>
+      <p>Below is an example of a body.</p>
       <p class="borderexample"><code>&lt;h1&gt;My Webpage&lt;/h1&gt;</code><br>
         <code>&lt;p&gt;I am the content of this webpage.&lt;/p&gt;</code><br>
         <code>&lt;img src="images/image.png" alt="Image" width="500"&gt;</code><br>
@@ -212,76 +210,135 @@
         <code>&lt;li&gt;3&lt;li&gt;</code><br>
         <code>&lt;ul&gt;</code>
       </p>
+      <h3>HTML</h3>
+      <p>The <code>&lt;html&gt;</code> tag is the tag containing the body and the head. Here is the syntax for a full webpage (put <code>&lt;!DOCTYPE html&gt; or &lt;DOCTYPE html&gt; - whichever one your text editor prefers. You can also do &lt;!doctype html&gt; or &lt;doctype html&gt; (lowercase).</code></p>
+      <table>
+        <tr>
+          <th>Input</th>
+          <th>Output</th>
+        </tr>
+        <tr>
+          <td><code>
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+            &nbsp;&lt;head&gt;
+            &nbsp;&nbsp;&lt;title&gt;Page title&lt;/title&gt;
+            &nbsp;&lt;/head&gt;
+            &nbsp;&lt;body&gt;
+            &nbsp;&nbsp;&lt;h1&gt;Heading&lt;/h1&gt;
+            &nbsp;&nbsp;&lt;h2&gt;Subheading&lt;/h2&gt;
+            &nbsp;&nbsp;&lt;p&gt;Body&lt;/p&gt;
+            &nbsp;&nbsp;&nbsp;&lt;ol&gt;
+            &nbsp;&nbsp;&nbsp;&lt;li&gt;Australia&lt;/li&gt;
+            &nbsp;&nbsp;&nbsp;&lt;li&gt;New Zealand&lt;/li&gt;
+            &nbsp;&nbsp;&nbsp;&lt;li&gt;Cambodia&lt;/li&gt;
+            &nbsp;&nbsp;&lt;/ol&gt;
+            &nbsp;&lt;/body&gt;
+            &lt;/html&gt;
+          </code></td>
+          <td>
+            <h1>Heading</h1>
+            <h2>Subheading</h2>
+            <p>Body</p>
+            <ol>
+              <li>Australia</li>
+              <li>New Zealand</li>
+              <li>Cambodia</li>
+            </ol>
+          </td>
+        </tr>
+      </table>
+      
       <h3>Images</h3>
-      <p>Images are relatively easy to make. Here I am substituting the name of the image with image.png. If you want to
+      <p>Images are relatively easy to make. Here I am substituting the name of the image with <code>image.png</code>. If you want to
         add
         your own image, follow these instructions or copy the text in the boxes, then change image.png to the name of
         your
-        image if you have images in your file, images yet.</p>
+        image if you have images in your "images" folder yet. If you did not set up a folder check out <a href="getting_started_with_the_internet.html">Getting Started with the Internet</a></p>
       <p>The first step is inserting the <code>&lt;img&gt;</code> tag and that isn't hard. as soon as you type
-        <code>&lt;img&gt;</code> than it will work.
+        <code>&lt;img&gt;</code> than it will work. (Remember, the <code>&lt;img&gt;</code> tag does <b>NOT</b> have a closing tag - it is <b>ONLY</b> "<code>&lt;img&gt;</code>")
       </p>
-      <p>Next in between the <code>&lt;img</code> and the &gt; do the <code>src</code> tag.</p>
+      <p>Next, in between the <code>&lt;img</code> and the &gt;, add the <code>src</code> attribute.</p>
       <p class="borderexample"><code>&lt;img src&gt;</code></p>
-      <p>Then after src do an = and do images/ the name of your image in "".</p>
+      <p>Then after the "src" attribute add an = and add "images/image.png" <i>in quotes</i>.</p>
+      <p>Your code should resemble this:</p>
       <p class="borderexample"><code>&lt;img src="images/image.png"&gt;</code></p>
-      <p>After that do the alt (meaning what is a good actual name for the image) and after that do the width tag, = and
+      <p>After that add the alt attribute (the alt text for people who have trouble seeing what the image is) and after that add the width attribute (which controls the viewable width of the image), = and
         how
         wide you want it to be. in "". 500 is just the average.</p>
       <p class="borderexample"><code>&lt;img src="images/image.png" alt="Image" width="500"&gt;</code></p>
+<p>Now you should have a working image in your file! (if the path to the image is all correct. Make sure you organize your files properly)</p>
       <h3>Links</h3>
-      <p>Links are very important — they link the web together. To make a link we can use some simple steps and that's
-        good
+      <p>Links are important. In short, they link the web together. Making a link is very simple which is good
         because you're probably gonna need a lot of them.</p>
-      <p>First of all wrap your text in the <code>&lt;a&gt;</code> element.</p>
+      <p>First of all wrap your text in the <code>&lt;a&gt;</code> element. (with a closing tag)</p>
       <p class="borderexample"><code>&lt;a&gt;Link&lt;/a&gt;</code></p>
-      <p>Next put a href element in between the <code>&lt;a</code> and the &gt;.</p>
+      <p>Next put a href attribute in between the <code>&lt;a</code> and the &gt;.</p>
       <p class="borderexample"><code>&lt;a href=""&gt;Link&lt;a&gt;</code></p>
       <p>Next insert the link that you want the link to lead to. The text </p>
-      <p class="borderexample"><code>&lt;a href="https://chain.com/"&gt;Link&lt;a&gt;</code><br> </p>
-      <h2>Videos</h2>
+      <p class="borderexample"><code>&lt;a href="https://albertkemp.github.io/html_tutorial/"&gt;https://albertkemp.github.io/html_tutorial/&lt;a&gt;</code><br> </p>
+      <p>Now you should have a link up and running.</p>
+      <h3>Videos</h2>
       <p>It is quite useful to know how to insert videos in your website. Videos aren't much harder if harder than
         images.
         Whether you are trying to make a tutorial like this one by having videos in your website to show people how to
         do
         things and other purposes like that.
-        Videos can be done in some simple steps. The first step is to do the <code>&lt;video&gt;</code> element, then in
-        between the <code>&lt;video</code> and the &gt; do the src element, = your name of the video wrapped in
+        Videos can be done in some simple steps. The first step is to add the <code>&lt;video&gt;</code> element, then in
+        between the <code>&lt;video</code> and the &gt; add the src attribute, = the file name of the video wrapped in
         quotation
-        marks, much like inserting image.</p>
+        marks, much like the syntax for the image.</p>
       <p class="borderexample"><code>&lt;video src="videos/video.mp4"</code></p>
-      <p>For the next step instead of alt add type ="video/mp4" then <code>controls&gt;</code> and after a space the
+      <p>For the next step add the type attribute - type="video/mp4" (if your video is a .mp4 file format. If otherwise, do otherwise.) then <code>controls&gt;</code> (optionally) which will allow the user to access the video controls such as play/pause, volume, and picture-in-picture) and after a space the
         closing
         <code>&lt;/video&gt;</code> tag.
       </p>
+      <p>Your code should look somewhat like this:</p>
       <p class="borderexample">
-        <code>&lt;video src="videos/video.mp4" type="video/mp4" controls&gt; &lt;/video&gt;</code>
+        <code>&lt;video src="videos/video.mp4" type="video/mp4" controls&nbsp;&gt; &lt;/video&gt;</code>
       </p>
+      <p><b>Notes:</b> To autoplay or loop the video, simply add the <code>autoplay</code> or <code>loop</code> attributes (without any filenames, = or quotes), like so:</p>
+      <p><code>&lt;video src="videos/video.mp4" type="video/mp4" controls <mark>autoplay loop</mark>&gt;&lt;/video&gt;</code></p>
+      <p>You can also use the <code>muted</code> attribute to mute the video (<code>&lt;video src="videos/video.mp4" type="video/mp4" controls <mark>muted</mark>&gt;&lt;/video&gt;</code>)</p>
+<p>Single quotes ('') and double quotes ("") are interchangeable</p>
       <br>
-      <h2>Text Borders</h2>
-      <p>Text borders aren't hard to make — they are just a simple border added to the normal <a
-          href="the<p>element.html"><code>&lt;p&gt;</code></a>
-        element. The first step is to do the <a href="the<p>element.html"><code>&lt;p&gt;</code></a> element and in
-        between the &lt;p and the &gt; do
-        class="borderexample". It should look like this</p>
-      <p class="borderexample"><code>&lt;p class="borderexample"&gt;your text goes here.&lt;/p&gt;</code></p>
-      <h2>Loops and autoplay.</h2>
-      <p>It is not hard to do autoplay and loops, first of all do the <code>src</code> tag, then it is basically like
-        <code>&lt;video&gt;</code> and <code>&lt;img&gt;</code>
-        without the <code>&lt;video&gt;</code> tag. To do loops and autoplay copy the code below.
-      </p>
-      <p class="borderexample"><code>&lt;video width="500" height="500" autoplay loop&gt;</code><br>
-        <code>&lt;source src="videos/video.mp4" type="video/mp4"  /&gt;</code><br>
-      </p>
-      <h2>Logo images</h2>
-      <p>It is a good idea to have a logo image, and its not hard either. The first step is to do the
+      <h3>Shortcut icons</h2>
+      <p>It is a good idea to have a shortcut icon (the image next to the page title in the tab, usually the site's logo), and its not hard either. The first step is to add the
         <code>&lt;link&gt;</code> tag.
       </p>
       <p class="borderexample"><code>&lt;link&gt;</code></p>
-      <p>Then for the next step do the <code>rel</code> and type <code>"shortcut icon"</code>, <code>href</code>, and
-        the name of your image</p>
+      <p>Then for the next step add the <code>rel</code> attribute and type <code>"shortcut icon"</code>. Finally, add the <code>href</code> attribute with the contents of the <code>=""</code> being the the filepath (and filename) of the image you want to use (e.g. "./images/image.png").
       <p class="borderexample"><code>&lt;link rel="shortcut icon" href="images/logo.png"&gt;</code></p>
-      <p>And that is the logo done, save the file and reload it to see if it worked.</p>
+      <p>And that's the code for a shortcut icon. Save and open the .html file and see if it worked!</p>
+      <br>
+      <h3>Text styling</h3>
+      <p><b>Bold</b>, <u>Underline</u>, <i>Italic</i>, <s>Strikethrough</s> and <mark>Highlighting</mark> are all available with simple HTML tags as follows:</p>
+      <table>
+        <tr>
+          <th>Syntax</th>
+          <th>Result</th>
+          </tr>
+          <tr>
+            <td>&lt;i&gt;italic&lt;/i&gt;</td>
+            <td><i>italic</i></td>
+            </tr>
+            <tr>
+              <td>&lt;b&gt;bold&lt;/b&gt; OR &lt;strong&gt;strong&lt;/strong&gt;</td>
+              <td><b>bold</b> OR <strong>strong</strong></td>
+            </tr>
+            <tr>
+              <td>&lt;u&gt;underline&lt;/u&gt;</td>
+              <td><u>underline</u></td>
+            </tr>
+            <tr>
+              <td>&lt;s&gt;strikethrough&lt;/s&gt;</td>
+              <td><s>strikethrough</s></td>
+              </tr>
+              <tr>
+                <td>&lt;mark&gt;highlight&lt;/mark&gt;</td>
+                <td><mark>highlight</mark></td>
+                </tr>
+        </table>
     </article>
   </main>
   <script src="scripts/main.js"></script>

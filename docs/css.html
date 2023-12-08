@@ -131,15 +131,14 @@
       <option>简体中文）</option>
     </select>
     <button onclick="window.location.href='getting_started_with_the_internet.html'">Change</button>
-  <h1>Getting to know CSS</h1>
-  <p>CSS is the formatting of html. Hopefully you have got styles.css nicely in the styles folder and html in first
-    site. The first step to styles.css is formatting the elements that we are going to learn in html. A good way to
-    start is the fonts. Go to Google Fonts, search for the font that you want to use and select use font or anything
-    similar.
-    After that there should be two codes, one large one, and one small one. Copy and paste the small one just under the
-    <code>&lt;head&gt;</code> element. An easier way to do it is to simply insert both the ones below under the
-    <code>&lt;html&gt;</code>
-    tag.
+  <h1>CSS Basics</h1>
+  <p>CSS is the style formatting of html. Create a file called "style.css" and move it into the "styles" folder. To add some fonts, you first have to get the font families. The best way is Google Fonts (<a href="fonts.google.com">fonts.google.com</a>). The homepage should have lots of font options. You can also search for fonts. When you've found a font you like, click on it and where it gives you styling options e.g. light, bold, italic, regular click the "Select [font]" button. After you've clicked that, copy the link that they've provided into your <code>&lt;head&gt;</code> tag - just under you're <code>&lt;title&gt;</code> or <code>&lt;link&gt;</code> tags.
+    Then, go to the small <code>"font-family: [font-family]"</code> block and copy the one with your desired font. Then, insert it into the curly brackets of the element you want to format. For example:</p>
+    <code>
+      h1 {
+      &nbsp;font-family:[font], [font-style];
+      }
+    </code>
   </p>
   <p class="borderexample"><code>&lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;</code><br>
     <code>&lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;</code><br>
@@ -147,12 +146,13 @@
   </p>
   <p>Then in styles.css (your stylesheet) insert the code below.</p>
   <p class="borderexample"><code>html {</code><br>
-    <code>font-size: 18px; /* px means "pixels": the base font size is now 10 pixels high  */</code><br>
+    <code>font-size: 18px; /* px means "pixels": the base font size is now 18 pixels high  */</code><br>
     <code>font-family: "Times", sans-serif; /* this should be the rest of the output you got from Google fonts */</code><br>
     <code>}</code>
   </p>
-  <h3>2. Css Basics</h3>
-  <p>First let's format a html document. Copy the code below to format <code>&lt;h1&gt;</code>, <a href="the<p>element.html"><a href="the<p>element.html"><code>&lt;p&gt;</code></a></a>,
+  <p>The code above changes the font size of all the text in the HTML document to 18 pixels high, and changes the font to <code>"Times", sans-serif;</code> which is a simple Times font
+  <h3>2. Basic CS syntax:</h3>
+  <p>First let's format a HTML document. Copy the code below to format <code>&lt;h1&gt;</code>, <a href="the<p>element.html"><a href="the<p>element.html"><code>&lt;p&gt;</code></a></a>,
     and <code>&lt;li&gt;</code>.</p>
   <p class="borderexample"><code>h1 {</code><br>
     <code>font-size: 60px;</code><br>
@@ -164,7 +164,7 @@
     <code>letter-spacing: 1px;</code>
     <code>}</code>
   </p>
-  <p>Now let's get the border formatted. We can't have the text border if it's not nicely formatted in CSS. Copy the
+  <p>Now let's make the border formatted. We can't have the text border if it's not nicely formatted in CSS. Copy the
     code below to format the text border.</p>
   <p class="borderexample"><code>.borderexample {<br>
     border-style:solid;<br>
