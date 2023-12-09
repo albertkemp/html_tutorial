@@ -106,7 +106,7 @@ button {
 }
 
 button:hover {
-  background-color: #3259d8; /* Green */
+  background-color: #3259d8; 
   color: white;
   text-decoration: underline;
   cursor: pointer;
