@@ -33,15 +33,15 @@ Teaching the world how to code
   <link href="styles/style.css" rel="stylesheet">
   <link rel="shortcut icon" href="images/html_tutorial_logo.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <title>Introduction to Python - Bird Docs</title>
+  <title>Introduction to JavaScript - Bird Docs</title>
 </head>
 
 <body>
   <div class="topnav">
     <a href="getting_started_with_html.html">HTML</a>
     <a href="css.html">CSS</a>
-    <a class="active" href="python.html">PYTHON</a>
-    <a href="javascript.html">JAVASCRIPT</a>
+    <a href="python.html">PYTHON</a>
+    <a  class="active"href="javascript.html">JAVASCRIPT</a>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -169,116 +169,177 @@ Teaching the world how to code
           <i title="Switch to light mode" class="material-icons light-mode-icon">light_mode</i>
         </button>                
       <br>
-      <h1>Python</h1>
-      <p>Python is a versatile and popular programming language usesd for many purposes. In this course, you will learn the basics of Python.</p>
+      <h1>JavaScript</h1>
       <h2>1. Printing</h2>
-      <p>To print to the console you simply wrap a string (text) in quotes, brackets and the <code>print()</code> function as follows:</p>
-      <p class="borderexample"><code>print('Hello World!')</code></p>
-      <p>Note: If you know JavaScript, unlike JavaScript, Python never uses semicolons. That's why there isn't one at the end of the line.</p>
-      <p>You can practice printing in Python with a python compiler like Programiz's <a href="https://www.programiz.com/python-programming/online-compiler/">Python Online Compiler</a>.</p>
-
-      <h2>2. Variables </h2>
-      <p>Variables are an important part of almost all programming languages, and are used to store strings, numbers, or booleans like True or False. Numbers are declared <b>without</b> quotes, strings with single or double quotes ('' or ""), and True or False literally just True or False (with capitals)</p>
-      <table>
+      <p>To print to the console in JavaScript is a good skill to learn. To print, simply run the console.log() function and type your string in between single or double quotes ('' or ""). For example:</p>
+      <p class="borderexample">
+        <code>
+            console.log('Hello World!');
+            <br><br>
+            Output:<br>
+            >>Hello World!<br>
+        </code>
+    </p>
+    <p><b>Notes:</b>If you are familiar with our <a href='python.html'>Python</a> course, you will know that Python does not use semicolons. However, JavaScript does use semicolons at the end of most lines (but none after opening brackets).</p>
+    <h2>2. Variables</h2>
+    <p>Like nearly every other programming language, JavaScript uses variables. It is vital to know how to use them. To declare a variable, it is slightly more complicated than Python, since you have to use a keyword at the start such as <code>var</code>, <code>let</code> or <code>const</code>. <code>const</code> is used for a constant variable, which can not be reassigned later in the code. The <code>var</code> keyword is the general variable term that can be reassigned and is the oldest and most widespread variable which you will often find in code, but many JavaScript courses often use the <code>let</code> keyword since it can be easily reassigned and is easy and convenient to use. Although it is a good idea to try and use <code>const</code> when you don't need to reassign the variable because it uses less space which can be useful in large scale projects.</p>
+    <p>The way to declare a variable is similar to Python - you type the keyword and then the variable name followed by an = sign to assign the value which could be a string, number, or boolean.</p>
+    <table>
         <tr>
             <th>Type</th>
             <th>Syntax</th>
         </tr>
         <tr>
-            <td>String</td>
-            <td>variable = 'hello'</td>
+            <td>string</td>
+            <td>'Hello'</td>
         </tr>
-            <tr>
-                <td>Number</td>
-                <td>variable = 1</td>
-            </tr>
         <tr>
-            <td>Boolean</td>
-            <td>variable = True</td>
+            <td>number</td>
+            <td>1</td>
         </tr>
-</table>
-<p>To declare a variable, you simply type the name of the variable (with no declaration keyword like var, let, or int), and assign its value with an = symbol</p>
+        <tr>
+            <td>boolean</td>
+            <td><mark>true&ast;</mark></td>
+        </tr>
+    </table>
+    <p><mark>*make sure to use lowercase for booleans in JavaScript (the first letter is uppercase in Python).</mark></p>
+    <p>Here is an example of how to declare a variable in JavaScript:</p>
+    <p class="borderexample">
+        <code>
+         const word = 'hello';
+        </code>
+    </p>
+    <p>To print a variable, simply wrap the variable name in the brackets (without quotes):</p>
+    <p class="borderexample">
+        <code>
+            const word = 'hello';<br>
+            console.log(word);<br>
+            <br>
+            Output:<br>
+            >>hello
+    </p>
 <h2>3. Comments</h2>
-<p>Comments can be useful to label or organise certain parts of your code. They are simply text that is ignored by the compiler. To make a comment, simply put a # in front (for line comments (single line)) or put 3 double quotes ("""comment""") for block comments (multiline). For example</p>
+<p>Comments are not comments like in a chat group or on a post. Well, at least not in programming. Comments are used to label and organise code, as putting the symbols around them lets the compiler ignore whatever is inside the symbols. They can be useful if you want to put a bit of code out of action without deleting it; just wrap it in comments</p>
+<p>Here's what JavaScript comments look like (line comments are for a single line of code, block comments are for multiline blocks of text/code.)</p>
 <table>
     <tr>
         <th>Type</th>
         <th>Syntax</th>
-        
     </tr>
     <tr>
         <td>Line comment</td>
-        <td>#Comment</td>
-        <tr>
+        <td>//comment</td>
+    </tr>
     <tr>
         <td>Block comment</td>
-        <td>"""Lorem ipsum dolor sit amet.<br>Blahblahblahblahblahblahfl<br>Let me introduce myself. I am a comment."""</td>
+        <td>/*comment*/</td>
     </tr>
-    <h2>3. If...else statements</h2>
-    <p>If...else statements are once again used in almost all programming languages and consist of checking if a value or something else is true, then execute a command. For example</p>
-    <p class="borderexample">
-        <code>
-            word = 'potato'<br>
-            if word=='potato':<br>
-            &nbsp;&nbsp;&nbsp;print('The word is "potato"')<br>
-Output:<br>
->>potato
-</code>
+</table>
+<p><b>Notes:</b> The syntax for JavaScript block comments are also used in CSS (the code that styles HTML)</p>
 
-    </p>
-    <h2>4. Functions</h2>
-    <p>Functions execute certain commands whenever they are called, so you could instead of having "print('potato')" in the if...else statement, you could replace it with "printPotato()" which would run a function that would print potato. To create a function you first define the function with the <code>def</code> keyword and then to run the function you type its name with an opening and closing bracket. For example:</p>
-    <p class="borderexample">
+<h2>4. If...else</h2>
+<p>If...else statements are used so if the code meets the criteria stated, the compiler will execute a certain function or line of code. For example:</p>
+<p class="borderexample">
+    <code>
+        const&nbsp;word&nbsp;=&nbsp;'tomato';<br>
+        if&nbsp;(word=='tomato')&nbsp;{<br>
+        &nbsp;&nbsp;&nbsp;console.log('Tomatoes are scary');<br>
+        }<br>
+        <br>
+        Output:<br>
+        >>Tomatoes are scary
+    </code>
+</p>
+<h2>5. Loops</h2>
+<p>Loops are used to execute a function over and over again till a certain criteria is met (or it could be an infinite loop) There are two main types of loops in javascript, the <code>while</code> loop and the <code>for</code> loop. The way a while loop works is it says while a certain condition is true it will keep looping but as soon as the condition is not met, it will stop and execute a certain task <br><br><b>A while loop:<b></p>
+    <p class='borderexample'>
         <code>
-            def writePotato():<br>
-            &nbsp;&nbsp;&nbsp;print('potato')<br>
+            let i = 0;<br>
+            while(i&lt;10) {<br>
+            &nbsp;&nbsp;&nbsp;<mark>i++</mark>;<br>
+            }<br>
             <br>
-            word = 'potato'<br>
-            if word=='potato':<br>
-            &nbsp;&nbsp;&nbsp;writePotato()
-
+            Output:<br>
+            >>1<br>
+            >>2<br>
+            >>3<br>
+            >>4<br>
+            >>5<br>
+            >>6<br>
+            >>7<br>
+            >>8<br>
+            >>9<br>
         </code>
     </p>
-    <p>Functions can be useful since you only have to define what you want it to do once and then you can run the function as many times as you want.</p>
-    <h2>5. Loops</h2>
-    <p>Loops are used to run the same function over and over again until the criteria has been met, or it could be infinite.</p>
-    <p>Looping through an array/table:</p>
-    <p>To loop through an array (or table) you first have to define the array by creating a variable, and listing the items in the array within square brackets ([]) like this:</p>
+<p><mark><b>Notes:</b>&nbsp;++ means to increase by one so if a variable had the value of 1 and you added <code>variable++</code> and then printed the value of the variable it would be 2.</mark></p>
+<p>The other type of loop, a <code>for</code> loop uses less lines of code, but appear a lot more complicated. First of all, the variable is declared within the for loop's brackets, then after a semicolon the condition for example "i &lt; 10" and then finally after another semicolon the <code>i++</code> part which will increase the value of <code>i</code> by one, and then inside the curly braces/brackets, the function to be run. In this case, it's printing 'Hello World!':</p>
 <p class="borderexample">
     <code>
-        array = ['apple', 'orange', 'banana']
-    </code>
-</p>
-<p>You then have to define the loop for example:</p>
-<p class="borderexample">
-    <code>
-        array = ['apple', 'orange', 'banana']<br>
-        for x in array:<br>
-        &nbsp;&nbsp;&nbsp;print(x)<br>
+        for (let i = 0; i &lt; 10; i++) {<br>
+        &nbsp;&nbsp;&nbsp;console.log('Hello World!');<br>
+        }<br>
         <br>
         Output:<br>
-        >>apple<br>
-        >>orange<br>
-        >>banana
+        >>Hello World!<br>
+        >>Hello World!<br>
+        >>Hello World!<br>
+        >>Hello World!<br>
+        >>Hello World!<br>
+        >>Hello World!<br>
+        >>Hello World!<br>
+        >>Hello World!<br>
+        >>Hello World!<br>
     </code>
 </p>
-<p><code>range()</code> function</p>
-<p>You can use the <code>range()</code> function for doing the same thing but with numbers. For example:</p>
+<p><b>Notes:<b> I know I have been using <code>i</code> as my variable for all the loops, but, remember, you can name the variable whatever you want, <code>i</code> is just convenient since it's short for integer.</p>
+<br>
+<h2>6. And (&&), Or (||) and Equal to (=== or ==)</h2>
+<p>Unlike <a href="python.html">Python</a>, in JavaScript instead of the simple <code>and</code> and <code>or</code> keywords you use "&&" and "||" and for equal to, "===" and "==" are interchangeable. For example:</p>
 <p class="borderexample">
     <code>
-        for x in range(6):<br>
-        &nbsp;&nbsp;&nbsp;print(x)<br>
+        const colorOne = 'pink'<br>
+        const colorTwo = 'green'<br>
+        <br>
+        if (colorOne == 'blue' && colorTwo == 'green' || colorOne=='pink') {<br>
+        &nbsp;&nbsp;&nbsp;console.log('I am happy.');<br>
+        } else {<br>
+        &nbsp;&nbsp;&nbsp;console.log('I am sad.');<br>
+        }<br>
         <br>
         Output:<br>
-        >>0<br>
-        >>1<br>
-        >>2<br>
-        >>3<br>
-        >>4<br>
-        >>5
+        >>I am happy.
     </code>
 </p>
-<p>the value of x changes as it loops through from 0 to 6, and if the number is &lt;(lesser) than 6 it will print it. It basically prints the value of x until x isn't in the range from 0 to 6</p>
+<h2>7. Functions</h2>
+<p>Functions in JavaScript are useful for running the same code multiple times without having to retype it. To create a function, first declare the function with the <code>function</code> keyword, then run the function by typing the name of the function followed by an opening and closing bracket. (()) here is an example of a function:</p>
+<p class="borderexample">
+    <code>
+        function sayHello() {<br>
+        &nbsp;&nbsp;&nbsp;console.log('Hello!')<br>
+        }<br>
+        <br>
+        sayHello();<br>
+        <br>
+        Output:<br>
+        >>Hello!
+    </code>
+</p>
+<p>In short:</p>
+<table>
+    <tr>
+        <th>Type</th>
+        <th>Syntax</th>
+    </tr>
+    <tr>
+        <td>Declaration</td>
+        <td>function function() {}</td>
+    </tr>
+    <tr>
+        <td>Run function</td>
+            <td>function()</td>
+    </tr>
+</table>
+
     </article> 
   </main>
   <script src="scripts/main.js"></script>

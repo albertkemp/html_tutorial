@@ -5,11 +5,11 @@ function my_search() {
   var input = document.getElementById("search_input");
   var newpage = "searchresults_cssbasics.html"
   if (input.value == "Getting started with the internet") {
-    newpage = "getting_started_with_the_internet.html"
+    newpage = "index.html"
    } else if (input.value =="Organising Files") {
     newpage = "organising_files.html"
   } else if (input.value =="HTML Basics") {
-    newpage = "index.html"
+    newpage = "getting_started_with_html.html"
   } else if (input.value =="The <p> element") {
     newpage = "the<p>element.html"
   } else if (input.value =="CSS Basics") {
@@ -23,11 +23,11 @@ function my_search() {
   } else if (input.value =="underline") {
     newpage = "css.html"
   } else if (input.value =="video") {
-    newpage = "index.html"
+    newpage = "getting_started_with_html.html"
   } else if (input.value =="image") {
-    newpage = "index.html"
+    newpage = "getting_started_with_html.html"
   } else if (input.value =="link") {
-    newpage = "index.html"
+    newpage = "getting_started_with_html.html"
   } else if (input.value =="what is p") {
     newpage = "the<p>element.html"
   } else if (input.value =="rd") {
