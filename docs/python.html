@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+  <!--
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+]]]]]]]]]]]]]]]]]]]]]]]         ]]]]]]]]]]
+]]]]]]]]]]]]]]]                   ]]]]]]]]
+]]]]]]]]]]]]]]]]]]]]                  ]]]]
+]]]]]]]]]]]]]]]]]]]]                    ]]
+]]]]]]]]]]]]]]]]]]]]                     ]
+]]]]]]]]]]]]]]]]]]]                     
+]]]]]]]]]]]]]]]]]]
+]]]]]]]]]]]]]]]]]]
+]]]]]]]]]]]]]]]]]]]
+]]]]]]]]]]]]]]]]]]]]]
+]]]]]]]]]]]]]]]]]]]]]]]
+
+
+]]]]]]    ]]  ]]]]]]    ]]]]]]            ]]]]]]          ]]]]        ]]]]]]    ]]]]]]
+]     ]]  ]]  ]]    ]]  ]]    ]]          ]]    ]]      ]]    ]]    ]]        ]]
+]]]]]]    ]]  ]]]]]]    ]]      ]]        ]]      ]]   ]]       ]]  ]]          ]]]]
+]     ]]  ]]  ]]]]      ]]    ]]          ]]    ]]      ]]    ]]    ]]              ]]
+]]]]]]    ]]  ]]  ]]]]  ]]]]]]            ]]]]]]          ]]]]        ]]]]]]   ]]]]]]
+
+Teaching the world how to code
+
+  -->
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@700&display=swap" rel="stylesheet">
+  <link href="styles/style.css" rel="stylesheet">
+  <link rel="shortcut icon" href="images/html_tutorial_logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Getting started with HTML – Bird Docs</title>
+</head>
+
+<body>
+  <div class="topnav">
+    <a class="active" href="index.html">HTML</a>
+    <a href="css.html">CSS</a>
+    <a href="python.html">PYTHON</a>
+    <a href="#javascript">JAVASCRIPT</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input list="Menu" name="myBrowser" placeholder="Search.." id = "search_input">
+    <button type="submit" class="buttonsearch" onclick="my_search()"><i class="fa fa-search"></i></button>
+   <datalist id="Menu">
+       <option value="Getting started with the internet"></option>
+       <option value="Organising Files"></option>
+       <option value="HTML Basics"></option>
+       <option value="The &lt;p&gt; element"></option>
+       <option value="CSS Basics"></option>
+       <option value="开始使用互联网"></option>
+       <option value="整理文件"></option>
+       <option value="HTML 基础"></option>
+       <option value="&lt;p&gt; 元素"></option>
+       <option value="CSS 基础"></option>
+       <option value="HTML"></option>
+       <option value="CSS"></option>
+       <option value="Git and Github"></option>
+       <option value="Change Language"></option>
+       <option value="JavaScript"></option>
+       <option value="Python"></option>
+       <option value=""></option>
+       <option value="a"></option>
+       <option value="b"></option>
+       <option value="c"></option>
+       <option value="d"></option>
+       <option value="e"></option>
+       <option value="f"></option>
+       <option value="g"></option>
+       <option value="h"></option>
+       <option value="i"></option>
+       <option value="j"></option>
+       <option value="k"></option>
+       <option value="l"></option>
+       <option value="m"></option>
+       <option value="n"></option>
+       <option value="o"></option>
+       <option value="p"></option>
+       <option value="q"></option>
+       <option value="r"></option>
+       <option value="s"></option>
+       <option value="t"></option>
+       <option value="u"></option>
+       <option value="v"></option>
+       <option value="w"></option>
+       <option value="x"></option>
+       <option value="y"></option>
+       <option value="z"></option>
+       <option value="A"></option>
+       <option value="b"></option>
+       <option value="C"></option>
+       <option value="D"></option>
+       <option value="E"></option>
+       <option value="F"></option>
+       <option value="G"></option>
+       <option value="H"></option>
+       <option value="I"></option>
+       <option value="J"></option>
+       <option value="K"></option>
+       <option value="L"></option>
+       <option value="M"></option>
+       <option value="N"></option>
+       <option value="O"></option>
+       <option value="P"></option>
+       <option value="Q"></option>
+       <option value="R"></option>
+       <option value="S"></option>
+       <option value="T"></option>
+       <option value="U"></option>
+       <option value="V"></option>
+       <option value="W"></option>
+       <option value="X"></option>
+       <option value="Y"></option>
+       <option value="Z"></option>
+       </datalist>
+      
+ </div>
+<main>
+    <aside>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <ul>
+        <li><a href="getting_started_with_the_internet.html">Getting started with the internet</a></li>
+        <li><a href="organising_files.html">Organising Files</a></li>
+        <h2>HTML:</h2>
+        <li><a href="index.html">Getting started with HTML</a></li>
+        <li><a href="the<p>element.html">The &lt;p&gt; element</a></li>
+        <h2>CSS:</h2>
+        <li><a href="css.html">Getting started with CSS</a></li>
+
+      </ul>
+    </aside>
+
+    <article>
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <button onclick="window.location.href='organising_files.html'">
+          Previous</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;<button
+        onclick="window.location.href='getting_started_with_the_internet.html'">
+          Overview: Getting started with the internet</button>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button
+        onclick="window.location.href='the<p>element.html'">Next</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select>
+          <option>🌐 Change language |</option>
+          <option>English (US)</option>
+          <option>简体中文）</option>
+        </select>
+        <button onclick="window.location.href='translate_language.html'">Change</button>
+        <button id="mode-toggle" class="dark-mode-toggle">
+          <i title="Switch to dark mode" class="material-icons dark-mode-icon">dark_mode</i>
+          <i title="Switch to light mode" class="material-icons light-mode-icon">light_mode</i>
+        </button>                
+      <br>
+      <h1>Python</h1>
+      <p>Python is a versatile and popular programming language usesd for many purposes. In this course, you will learn the basics of Python.</p>
+      <h2>1. Printing</h2>
+      <p>To print to the console you simply wrap a string (text) in quotes, brackets and the <code>print()</code> function as follows:</p>
+      <p class="borderexample"><code>print('Hello World!')</code></p>
+      <p>Note: If you know JavaScript, unlike JavaScript, Python never uses semicolons. That's why there isn't one at the end of the line.</p>
+      <p>You can practice printing in Python with a python compiler like Programiz's <a href="https://www.programiz.com/python-programming/online-compiler/">Python Online Compiler</a>.</p>
+
+      <h2>2. Variables </h2>
+      <p>Variables are an important part of almost all programming languages, and are used to store strings, numbers, or booleans like True or False. Numbers are declared <b>without</b> quotes, strings with single or double quotes ('' or ""), and True or False literally just True or False (with capitals)</p>
+      <table>
+        <tr>
+            <th>Type</th>
+            <th>Syntax</th>
+        </tr>
+        <tr>
+            <td>String</td>
+            <td>variable = 'hello'</td>
+        </tr>
+            <tr>
+                <td>Number</td>
+                <td>variable = 1</td>
+            </tr>
+        <tr>
+            <td>Boolean</td>
+            <td>variable = True</td>
+        </tr>
+</table>
+<p>To declare a variable, you simply type the name of the variable (with no declaration keyword like var, let, or int), and assign its value with an = symbol</p>
+<h2>3. Comments</h2>
+<p>Comments can be useful to label or organise certain parts of your code. They are simply text that is ignored by the compiler. To make a comment, simply put a # in front (for line comments (single line)) or put 3 double quotes ("""comment""") for block comments (multiline). For example</p>
+<table>
+    <tr>
+        <th>Type</th>
+        <th>Syntax</th>
+        
+    </tr>
+    <tr>
+        <td>Line comment</td>
+        <td>#Comment</td>
+        <tr>
+    <tr>
+        <td>Block comment</td>
+        <td>"""Lorem ipsum dolor sit amet.<br>Blahblahblahblahblahblahfl<br>Let me introduce myself. I am a comment."""</td>
+    </tr>
+    <h2>3. If...else statements</h2>
+    <p>If...else statements are once again used in almost all programming languages and consist of checking if a value or something else is true, then execute a command. For example</p>
+    <p class="borderexample">
+        <code>
+            word = 'potato'<br>
+            if word=='potato':<br>
+            &nbsp;&nbsp;&nbsp;print('The word is "potato"')<br>
+Output:<br>
+>>potato
+</code>
+
+    </p>
+    <h2>4. Functions</h2>
+    <p>Functions execute certain commands whenever they are called, so you could instead of having "print('potato')" in the if...else statement, you could replace it with "printPotato()" which would run a function that would print potato. To create a function you first define the function with the <code>def</code> keyword and then to run the function you type its name with an opening and closing bracket. For example:</p>
+    <p class="borderexample">
+        <code>
+            def writePotato():<br>
+            &nbsp;&nbsp;&nbsp;print('potato')<br>
+            <br>
+            word = 'potato'<br>
+            if word=='potato':<br>
+            &nbsp;&nbsp;&nbsp;writePotato()
+
+        </code>
+    </p>
+    <p>Functions can be useful since you only have to define what you want it to do once and then you can run the function as many times as you want.</p>
+    <h2>5. Loops</h2>
+    <p>Loops are used to run the same function over and over again until the criteria has been met, or it could be infinite.</p>
+    <p>Looping through an array/table:</p>
+    <p>To loop through an array (or table) you first have to define the array by creating a variable, and listing the items in the array within square brackets ([]) like this:</p>
+<p class="borderexample">
+    <code>
+        array = ['apple', 'orange', 'banana']
+    </code>
+</p>
+<p>You then have to define the loop for example:</p>
+<p class="borderexample">
+    <code>
+        array = ['apple', 'orange', 'banana']<br>
+        for x in array:<br>
+        &nbsp;&nbsp;&nbsp;print(x)<br>
+        <br>
+        Output:<br>
+        >>apple<br>
+        >>orange<br>
+        >>banana
+    </code>
+</p>
+<p><code>range()</code> function</p>
+<p>You can use the <code>range()</code> function for doing the same thing but with numbers. For example:</p>
+<p class="borderexample">
+    <code>
+        for x in range(6):<br>
+        &nbsp;&nbsp;&nbsp;print(x)<br>
+        <br>
+        Output:<br>
+        >>0
+        >>1
+        >>2
+        >>3
+        >>4
+        >>5
+    </code>
+</p>
+<p>the value of x changes as it loops through from 0 to 6, and if the number is &lt;(lesser) than 6 it will print it. It basically prints the value of x until x isn't in the range from 0 to 6</p>
+    </article> 
+  </main>
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>

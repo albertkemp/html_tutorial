@@ -49,7 +49,7 @@ function my_search() {
   } else if (input.value =="backround colour") {
     newpage = "searchresults_cssbasics.html"
   } else if (input.value =="calculating") {
-    newpage = "#python"
+    newpage = "python.html"
   } else if (input.value =="a") {
     newpage = "searchresults_cssbasics.html"
   } else if (input.value =="b") {
