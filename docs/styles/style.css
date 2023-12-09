@@ -109,6 +109,7 @@ button:hover {
   background-color: #3259d8; /* Green */
   color: white;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 /* a {
