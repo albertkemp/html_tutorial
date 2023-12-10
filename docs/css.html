@@ -160,55 +160,121 @@ Teaching the world how to code
       <i title="Switch to light mode" class="material-icons light-mode-icon">light_mode</i>
     </button>                
   <h1>CSS Basics</h1>
-  <p>CSS is the style formatting of html. Create a file called "style.css" and move it into the "styles" folder. To add some fonts, you first have to get the font families. The best way is Google Fonts (<a href="fonts.google.com">fonts.google.com</a>). The homepage should have lots of font options. You can also search for fonts. When you've found a font you like, click on it and where it gives you styling options e.g. light, bold, italic, regular click the "Select [font]" button. After you've clicked that, copy the link that they've provided into your <code>&lt;head&gt;</code> tag - just under you're <code>&lt;title&gt;</code> or <code>&lt;link&gt;</code> tags.
-    Then, go to the small <code>"font-family: [font-family]"</code> block and copy the one with your desired font. Then, insert it into the curly brackets of the element you want to format. For example:</p>
+  <p>CSS is the language that styles a HTML page. You can use it to add fonts, colors, size and more of HTML tags and elements. Firstly, we have to set up our CSS file. Create a file called "style.css" (or it can be anything as long as it ends with ".css"), and add it to your styles folder, or in the same main folder as the HTML file you want to change. Then, into the head of your HTML file, insert the following code (replace 'style.css' with the name of your CSS file (if it isn't 'style.css'))</p>
+  <p class="borderexample">
     <code>
-      h1 {
-      &nbsp;font-family:[font], [font-style];
-      }
+      &lt;link rel="stylesheet" href="style.css"&gt;
     </code>
   </p>
-  <p class="borderexample"><code>&lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;</code><br>
-    <code>&lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;</code><br>
-    <code>&lt;link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@0;1&family=Libre+Baskerville&family=Stick+No+Bills:wght@200&display=swap"</code>
+  <p>Or you could add a style tag to the <code>&lt;head&gt;</code> tag of your HTML page as follows:</p>
+  <p class="borderexample">
+    <code>
+      &lt;!DOCTYPE html&gt;<br>
+      &lt;html&gt;<br>
+      &nbsp;&lt;head&gt;<br>
+      &nbsp;&nbsp;&lt;title&gt;Page title&lt;/title&gt;<br>
+      &nbsp;&nbsp;&lt;link rel="stylesheet" href="style.css"&gt;<br>
+      &nbsp;&lt;/head&gt;<br>
+      &nbsp;&lt;body&gt;<br>
+      &nbsp;&lt;/body&gt;<br>
+      &lt;/html&gt;<br>
+      </code>
   </p>
-  <p>Then in styles.css (your stylesheet) insert the code below.</p>
-  <p class="borderexample"><code>html {</code><br>
-    <code>font-size: 18px; /* px means "pixels": the base font size is now 18 pixels high  */</code><br>
-    <code>font-family: "Times", sans-serif; /* this should be the rest of the output you got from Google fonts */</code><br>
-    <code>}</code>
+  <p>Let's start by making a <code>&lt;p&gt;</code> tag red:</code></p>
+  <p class="borderexample">
+    <code>
+      p {<br>
+      &nbsp;&nbsp;&nbsp;color: red;<br>
+      }<br>
+    </code>
   </p>
-  <p>The code above changes the font size of all the text in the HTML document to 18 pixels high, and changes the font to <code>"Times", sans-serif;</code> which is a simple Times font
-  <h3>2. Basic CS syntax:</h3>
-  <p>First let's format a HTML document. Copy the code below to format <code>&lt;h1&gt;</code>, <a href="the<p>element.html"><a href="the<p>element.html"><code>&lt;p&gt;</code></a></a>,
-    and <code>&lt;li&gt;</code>.</p>
-  <p class="borderexample"><code>h1 {</code><br>
-    <code>font-size: 60px;</code><br>
-    <code>text-align: center;</code><br>
-    <code>}</code><br>
-    <code>p, li {</code><br>
-    <code>font-size: 16px;</code><br>
-    <code>line-height: 2;</code><br>
-    <code>letter-spacing: 1px;</code>
-    <code>}</code>
-  </p>
-  <p>Now let's make the border formatted. We can't have the text border if it's not nicely formatted in CSS. Copy the
-    code below to format the text border.</p>
-  <p class="borderexample"><code>.borderexample {<br>
-    border-style:solid;<br>
-    border-color:#6d6969;<br>
-   }
-   body {<br>
-    width: 900px;<br>
-    margin: 0 auto;<br>
-    background-color: #ffffff;<br>
-    padding: 0 20px 20px 20px;<br>
-    border: 5px solid rgb(255, 255, 255);<br>
-  }</code></p>
-  <p>Now let's do some simple HTML formatting. First of all let's do a basic color red.</p>
-  <p class="borderexample"><code>p {</code><br>
-  <code>&nbsp;&nbsp;color: red;</code><br>
-  <code>}</code></p>
+  <table>
+    <tr>
+      <th>Input</th>
+      <th>Output</th>
+    </tr>
+    <tr>
+      <td><code><b>HTML:</b><br>&lt;p&gt;Hello World!&lt;/p&gt;<br><b>CSS:</b><br>p {<br>&nbsp;&nbsp;&nbsp;color:red;<br>}</code></td>
+      <td><p color="red">Hello World</p></td>
+    </tr>
+  </table>
+
+  <p>Now let's add some fonts. Go to <a href="fonts.google.com">Google Fonts</a>, and select a font that you like. Click on it, and it will give you a link to paste into your <code>&lt;head&gt;</code> tag. (if you haven't learnt about <code>&lt;head&gt;</code> and <code>&lt;body&gt;</code> tags, check out our <a href="getting_started_with_html.html">HTML tutorial</a>). First of all, paste the link into your head tag:</code></p>
+  <p class="borderexample">
+    <code>
+      &lt;!DOCTYPE html&gt;<br>
+      &lt;html&gt;<br>
+      &nbsp;&lt;head&gt;<br>
+      &nbsp;&nbsp;&lt;title&gt;Page title&lt;/title&gt;<br>
+      <br>
+      
+      &nbsp;&nbsp;[your link]<br>
+      &nbsp;&lt;/head&gt;<br>
+      &nbsp;&lt;body&gt;<br>
+      <br>
+      &nbsp;&nbsp;[Body content]<br>
+      &nbsp;&lt;/body&gt;<br>
+      &lt;/html&gt;<br>
+    </code>
+    </p>
+    <p>Next, paste the small bit of font specification (e.g. font-family: 'Times', serif;) which should be below the first link, into the tag of the desired HTML element, For example, if we want to change the font of a <code>&lt;h1&gt;</code> to Times, do this:</code></p>
+    <p class="borderexample">
+      h1 {<br>
+      &nbsp;&nbsp;&nbsp;font-family: 'Times', serif;<br>
+      }
+    </p>
+    <p>The result should be the text with your desired font (if you added some text of that type in your HTML file).</p>
+    <p>Now let's change some font size. To change font size, you simply set the <code>font-size</code> value to a desired size (in px (pixels high)) For example:</p>
+    <p class="borderexample">
+      <code>
+        h1 {<br>
+        &nbsp;&nbsp;&nbsp;font-size:60px;<br>
+        }
+        </code>
+      </p>
+      <p>&uparrow;This will set the font size to 60 pixels high.</p>
+      <table>
+        <tr>
+          <th>Input</th>
+        <th>Output</th>
+        </tr>
+        <tr>
+          <td>HTML:<br>&lt;h1&gt;Hello World!&lt;/h1&gt;<br><br>CSS:<br>h1{<br>&nbsp;&nbsp;&nbsp;font-size:60px;<br>}</td>
+          <td><h1 style="font-size:60px;">Hello World!</h1></td>
+        </tr>
+        
+      </table>
+      <h2>Text Borders</h2>
+      <p>To create borders around text, we will be introducing a new concept, <code>class</code> attribute. To set a new class, simply put a . before the name of the class that you want to assign. For example:</p>
+      <p class="borderexample">
+        <code>
+          CSS:
+          .red{<br>
+            &nbsp;&nbsp;&nbsp;color:red;<br>
+          }<br><br>
+          HTML:<br>
+          &lt;h1 class="red"&gt;Hello World!&lt;/h1&gt;
+        </code>
+        <p><b>Output:</b></p>
+        <h1 style="color:red;">Hello World!</h1>
+      </p>
+      <p>Now, we create a new class. Name it something to do with a border, so you can distinguish it from other classes. I'm calling mine ".borderexample". For example:</p>
+      <p class="borderexample">
+        .borderexample{<br>
+          &nbsp;&nbsp;&nbsp;border-style:solid;<br>
+          &nbsp;&nbsp;&nbsp;border-color:#6d6969;<br>
+        }
+      </p>
+      <table>
+        <tr>
+          <th>Input</th>
+          <th>Output</th>
+        </tr>
+        <tr>
+          <td><code>HTML:<br>&lt;p class="borderexample"&gt;Hello World!&lt;/p&gt;<br><br>CSS:<br>.borderexample{<br>&nbsp;&nbsp;&nbsp;border-style:solid;<br>&nbsp;&nbsp;&nbsp;border-color:#6d6969;<br>}</code></td>
+          <td><p class="borderexample">Hello World!</p></td>
+        </tr>
+      </table>
   </article>
   </main>
   <script src="scripts/main.js"></script>
