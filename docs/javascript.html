@@ -179,7 +179,7 @@ Teaching the world how to code
     </p>
     <p><b>Notes:</b>If you are familiar with our <a href='python.html'>Python</a> course, you will know that Python does not use semicolons. However, JavaScript does use semicolons at the end of most lines (but none after opening brackets).</p>
     <h2>2. Variables</h2>
-    <p>Like nearly every other programming language, JavaScript uses variables. It is vital to know how to use them. To declare a variable, it is slightly more complicated than Python, since you have to use a keyword at the start such as <code>var</code>, <code>let</code> or <code>const</code>. <code>const</code> is used for a constant variable, which can not be reassigned later in the code. The <code>var</code> keyword is the general variable term that can be reassigned and is the oldest and most widespread variable which you will often find in code, but many JavaScript courses often use the <code>let</code> keyword since it can be easily reassigned and is easy and convenient to use. Although it is a good idea to try and use <code>const</code> when you don't need to reassign the variable because it uses less space which can be useful in large scale projects.</p>
+    <p>Like nearly every other programming language, JavaScript uses variables. It is vital to know how to use them. To declare a variable, it is slightly more complicated than Python, since you have to use a keyword at the start such as <code class="single">var</code>, <code class="single">let</code> or <code class="single">const</code>. <code class="single">const</code> is used for a constant variable, which can not be reassigned later in the code. The <code class="single">var</code> keyword is the general variable term that can be reassigned and is the oldest and most widespread variable which you will often find in code, but many JavaScript courses often use the <code class="single">let</code> keyword since it can be easily reassigned and is easy and convenient to use. Although it is a good idea to try and use <code class="single">const</code> when you don't need to reassign the variable because it uses less space which can be useful in large scale projects.</p>
     <p>The way to declare a variable is similar to Python - you type the keyword and then the variable name followed by an = sign to assign the value which could be a string, number, or boolean.</p>
     <table>
         <tr>
@@ -249,7 +249,7 @@ Teaching the world how to code
     </code>
 </p>
 <h2>5. Loops</h2>
-<p>Loops are used to execute a function over and over again till a certain criteria is met (or it could be an infinite loop) There are two main types of loops in javascript, the <code>while</code> loop and the <code>for</code> loop. The way a while loop works is it says while a certain condition is true it will keep looping but as soon as the condition is not met, it will stop and execute a certain task <br><br><b>A while loop:</b></p>
+<p>Loops are used to execute a function over and over again till a certain criteria is met (or it could be an infinite loop) There are two main types of loops in javascript, the <code class="single">while</code> loop and the <code class="single">for</code> loop. The way a while loop works is it says while a certain condition is true it will keep looping but as soon as the condition is not met, it will stop and execute a certain task <br><br><b>A while loop:</b></p>
     <p class='borderexample'>
         <code>
             let i = 0;<br>
@@ -270,8 +270,8 @@ Teaching the world how to code
             >>9<br>
         </code>
     </p>
-<p><mark><b>Notes:</b>&nbsp;++ means to increase by one so if a variable had the value of 1 and you added <code>variable++</code> and then printed the value of the variable it would be 2.</mark></p>
-<p>The other type of loop, a <code>for</code> loop uses less lines of code, but appear a lot more complicated. First of all, the variable is declared within the for loop's brackets, then after a semicolon the condition for example "i &lt; 10" and then finally after another semicolon the <code>i++</code> part which will increase the value of <code>i</code> by one, and then inside the curly braces/brackets, the function to be run. In this case, it's printing 'Hello World!':</p>
+<p><mark><b>Notes:</b>&nbsp;++ means to increase by one so if a variable had the value of 1 and you added <code class="single">variable++</code> and then printed the value of the variable it would be 2.</mark></p>
+<p>The other type of loop, a <code class="single">for</code> loop uses less lines of code, but appear a lot more complicated. First of all, the variable is declared within the for loop's brackets, then after a semicolon the condition for example "i &lt; 10" and then finally after another semicolon the <code class="single">i++</code> part which will increase the value of <code class="single">i</code> by one, and then inside the curly braces/brackets, the function to be run. In this case, it's printing 'Hello World!':</p>
 <p class="borderexample">
     <code>
         for (let i = 0; i &lt; 10; i++) {<br>
@@ -290,10 +290,10 @@ Teaching the world how to code
         >>Hello World!<br>
     </code>
 </p>
-<p><b>Notes:</b> I know I have been using <code>i</code> as my variable for all the loops, but, remember, you can name the variable whatever you want, <code>i</code> is just convenient since it's short for integer.</p>
+<p><b>Notes:</b> I know I have been using <code class="single">i</code> as my variable for all the loops, but, remember, you can name the variable whatever you want, <code class="single">i</code> is just convenient since it's short for integer.</p>
 <br>
 <h2>6. And (&&), Or (||) and Equal to (=== or ==)</h2>
-<p>Unlike <a href="python.html">Python</a>, in JavaScript instead of the simple <code>and</code> and <code>or</code> keywords you use "&&" and "||" and for equal to, "===" and "==" are interchangeable. For example:</p>
+<p>Unlike <a href="python.html">Python</a>, in JavaScript instead of the simple <code class="single">and</code> and <code class="single">or</code> keywords you use <code class="single">&&</code> and <code class="single">||</code> and for equal to, <code class="single">===</code> and <code class="single">==</code> are interchangeable. For example:</p>
 <p class="borderexample">
     <code>
         const colorOne = 'pink'<br>
@@ -310,7 +310,7 @@ Teaching the world how to code
     </code>
 </p>
 <h2>7. Functions</h2>
-<p>Functions in JavaScript are useful for running the same code multiple times without having to retype it. To create a function, first declare the function with the <code>function</code> keyword, then run the function by typing the name of the function followed by an opening and closing bracket. (()) here is an example of a function:</p>
+<p>Functions in JavaScript are useful for running the same code multiple times without having to retype it. To create a function, first declare the function with the <code class="single">function</code> keyword, then run the function by typing the name of the function followed by an opening and closing bracket. (()) here is an example of a function:</p>
 <p class="borderexample">
     <code>
         function sayHello() {<br>
@@ -331,11 +331,11 @@ Teaching the world how to code
     </tr>
     <tr>
         <td>Declaration</td>
-        <td>function function() {}</td>
+        <td><code>function function() {}</code></td>
     </tr>
     <tr>
         <td>Run function</td>
-            <td>function()</td>
+            <td><code>function()</code></td>
     </tr>
 </table>
 
