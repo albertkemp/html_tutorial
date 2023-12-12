@@ -227,11 +227,11 @@ Teaching the world how to code
         <code>&lt;ol&gt;</code> (ordered list). Unordered list adds bullet points, so the list items aren't ranked, while ordered list (<code>&lt;ol&gt;</code>) orders it (1., 2., 3.). Decide between which one you want, and then add the <code>&lt;li&gt;</code> tag inside the <code>&lt;ul&gt;</code> or <code>&lt;ol&gt;</code> tags. Your code should look something like this:</p>
         <p class="borderexample">
           <code>
-            &lt;ul&gt;
-            &nbsp;&nbsp;&nbsp;&lt;li&gt;list item 1&lt;/li&gt;
-            &nbsp;&nbsp;&nbsp;&lt;li&gt;list item 2&lt;/li&gt;
-            &nbsp;&nbsp;&nbsp;&lt;li&gt;list item 3&lt;/li&gt;
-            &lt;/ul&gt;
+            &lt;ul&gt;<br>
+            &nbsp;&nbsp;&nbsp;&lt;li&gt;list item 1&lt;/li&gt;<br>
+            &nbsp;&nbsp;&nbsp;&lt;li&gt;list item 2&lt;/li&gt;<br>
+            &nbsp;&nbsp;&nbsp;&lt;li&gt;list item 3&lt;/li&gt;<br>
+            &lt;/ul&gt;<br>
           </code>
         </p>
         <table>
@@ -242,7 +242,33 @@ Teaching the world how to code
           </tr>
           <tr>
             <td><code>&lt;ul&gt;</td>
-              <td><code>&lt;ul&gt;&lt;/ul&gt;</code></td>
+              <td><code>&lt;ul&gt;<br>
+                &nbsp;&nbsp;&nbsp;&lt;li&gt;list item 1&lt;/li&gt;<br>
+            &nbsp;&nbsp;&nbsp;&lt;li&gt;list item 2&lt;/li&gt;<br>
+            &nbsp;&nbsp;&nbsp;&lt;li&gt;list item 3&lt;/li&gt;<br>
+                &lt;/ul&gt;</code></td>
+                <td>
+                  <ul>
+                    <li>list item 1</li>
+                    <li>list item 2</li>
+                    <li>list item 3</li>
+                  </ul>
+                </td>
+          </tr>
+          <tr>
+            <td><code>&lt;ol&gt;</code></td>
+            <td><code>&lt;ol&gt;<br>
+              &nbsp;&nbsp;&nbsp;&lt;li&gt;list item 1&lt;/li&gt;<br>
+              &nbsp;&nbsp;&nbsp;&lt;li&gt;list item 2&lt;/li&gt;<br>
+              &nbsp;&nbsp;&nbsp;&lt;li&gt;list item 3&lt;/li&gt;<br>
+            &lt;/ol&gt;</code></td>
+            <td>
+              <ol>
+                <li>list item 1</li>
+                <li>list item 2</li>
+                <li>list item 3</li>
+              </ol>
+            </td>
           </tr>
           </table>
       <h3>HTML</h3>
