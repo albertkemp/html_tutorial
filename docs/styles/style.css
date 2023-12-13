@@ -222,14 +222,17 @@ body.dark-mode {
   background-color: #333333;
   color: #ffffff;
 }
+#mode-toggle{
+  padding:5px;
+}
 .dark-mode-toggle .light-mode-icon {
   display: none;
 }
 .dark-mode-icon {
-    font-size: 45px;
+    font-size: 30px;
 }
 .light-mode-icon {
-    font-size: 45px;
+    font-size: 30px;
 }
 
 
