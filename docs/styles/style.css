@@ -209,7 +209,8 @@ input {
 }
 a {
   text-decoration: underline;
-  text-decoration-color: #3259d8;
+  color: #3259d8;
+  background-color: white;
 }
 .single{
   background-color: lightgrey;
